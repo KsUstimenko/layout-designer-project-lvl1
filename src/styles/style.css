@@ -1,7 +1,42 @@
 /** CSS STYLE **/
+@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
 
 .hello {
   display: block;
-
   color: #fff;
+}
+
+.header-container {
+  height: 914px;
+  width: 1440px;
+  display: block;
+  justify-content: space-around;
+}
+
+.background-image {
+  background: url("../images/background.png");
+}
+
+.image-main {
+  width: 1082px;
+  height: 525px;
+  padding-left: 461px;
+}
+
+.font-header {
+  font-family: "Neucha";
+  font-size: 72px;
+}
+
+.font-header_1page {
+  color: #fe8a02;
+  padding-top: 100px;
+  padding-left: 165px;
+  width: 72px;
+}
+
+.font-header_1page_added {
+  padding-top: 100px;
+  padding-left: 165px;
+  line-height: 1.2em;
 }
