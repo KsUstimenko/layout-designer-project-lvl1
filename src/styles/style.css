@@ -21,19 +21,25 @@ html {
   color: #2A2626;
 }
 
-.font-h1 {
+.header-font {
   font-family: "Neucha", sans-serif;
-  font-size: 72px;
 }
 
-.font-h2 {
-  font-family: "Neucha", sans-serif;
+h1 {
+  font-size: 72px;
+  font-weight: normal;
+}
+
+h2 {
   font-size: 60px;
 }
 
-.font-h3 {
-  font-family: "Neucha", sans-serif;
+h3 {
   font-size: 34px;
+}
+
+.main-color {
+  color: var(--color-main);
 }
 
 .content {
@@ -43,34 +49,18 @@ html {
   padding-bottom: 100px;
 }
 
-.header-container {
-  height: 914px;
-  width: 1440px;
-  display: block;
-}
 
-.background-image {
-  background-image: url("../images/background.png");
-}
-
-.image-main {
-  width: 1082px;
-  height: 525px;
+.background-image::before {
+  content: "";
+  background-size: cover;
   position: absolute;
-}
-
-.font-header_1page {
-  color: var(--color-main);
-  padding-top: 100px;
-  padding-left: 165px;
-  width: 72px;
-  line-height: 1.2em;
-}
-
-.font-header_1page_added {
-  padding-top: 100px;
-  padding-left: 165px;
-  line-height: 1.2em;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 10%;
+  background: var(--color-white_translucent) url("../images/background.png") no-repeat;
 }
 
 
