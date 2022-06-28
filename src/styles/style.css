@@ -1,38 +1,70 @@
 /** CSS STYLE **/
 @import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
 
-.hello {
-  display: block;
-  color: #fff;
+:root {
+  --color-white: #fff;
+  --color-white_translucent: #d7ccc0;
+  --color-light: #f5f4f0;
+  --color-main: #fe8a02;
+  --color-main_dark: #42413c;
+  --color-dark: #2a2626;
+  --color-dark_translucent: #908d8b;
+  --color-brown: #b09a81;
+  --color-blue: #1085c5;
+}
+
+html {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.6em;
+  color: #2A2626;
+}
+
+.font-h1 {
+  font-family: "Neucha", sans-serif;
+  font-size: 72px;
+}
+
+.font-h2 {
+  font-family: "Neucha", sans-serif;
+  font-size: 60px;
+}
+
+.font-h3 {
+  font-family: "Neucha", sans-serif;
+  font-size: 34px;
+}
+
+.content {
+  width: 1110px;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .header-container {
   height: 914px;
   width: 1440px;
   display: block;
-  justify-content: space-around;
 }
 
 .background-image {
-  background: url("../images/background.png");
+  background-image: url("../images/background.png");
 }
 
 .image-main {
   width: 1082px;
   height: 525px;
-  padding-left: 461px;
-}
-
-.font-header {
-  font-family: "Neucha";
-  font-size: 72px;
+  position: absolute;
 }
 
 .font-header_1page {
-  color: #fe8a02;
+  color: var(--color-main);
   padding-top: 100px;
   padding-left: 165px;
   width: 72px;
+  line-height: 1.2em;
 }
 
 .font-header_1page_added {
@@ -40,3 +72,6 @@
   padding-left: 165px;
   line-height: 1.2em;
 }
+
+
+
