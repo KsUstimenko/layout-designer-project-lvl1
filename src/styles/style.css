@@ -68,12 +68,20 @@ h3 {
   background: var(--color-white_translucent) url("../images/background.png") no-repeat;
 }
 
+.header_1page {
+  position: absolute;
+  width: 1138px;
+  height: 177px;
+  left: 165px;
+  top: 65px;
+}
+
 .image-main {
   height: 525px;
   width: 1082px;
   position: absolute;
   left: 461px;
-  top: 55px;
+  top: 60px;
 }
 
 .text-container {
@@ -87,6 +95,30 @@ h3 {
   padding: 12px 24px;
   font-weight: bold;
   background-color: var(--color-main);
-  width: 148px;
-  height: 49px;
+  width: 95px;
+  height: 30px;
+  position: absolute;
+  left: 735px;
+  top: 765px;
+}
+
+.link_more_style {
+  color: var(--color-light);
+  text-decoration: none;
+}
+
+.p1__1page {
+  position: absolute;
+  width: 540px;
+  height: 141px;
+  left: 165px;
+  top: 540px;
+}
+
+.p2__1page {
+  position: absolute;
+  width: 540px;
+  height: 186px;
+  left: 735px;
+  top: 540px;
 }
