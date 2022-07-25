@@ -2,6 +2,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
 
+/*----------ОБЩИЕ НАСТРОЙКИ КОНТЕЙНЕРА-------------------*/
+.wrapper{
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 1110px;
+  margin: 0px auto;
+  padding: 0px 15px;
+  box-sizing: content-box;
+}
+
+html {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.6em;
+  color: #2A2626;
+}
+
 :root {
   --color-white: #fff;
   --color-white_translucent: #d7ccc0;
@@ -14,20 +36,13 @@
   --color-blue: #1085c5;
 }
 
-html {
-  font-family: "Open Sans", sans-serif;
-  font-size: 16px;
-  line-height: 1.6em;
-  color: #2A2626;
+.black-color {
+  color: var(--color-dark);
 }
 
 .header-font {
   font-family: "Neucha", sans-serif;
   line-height: 1.2em;
-}
-
-span {
-  color: #2a2626;
 }
 
 h1 {
@@ -43,82 +58,90 @@ h3 {
   font-size: 34px;
 }
 
-.main-color {
+/*----------ЗАГОЛОВОК-------------------*/
+.header{
+
+}
+
+.header_header-block {
+
+}
+
+.header-block {
+  position: relative;
+}
+
+.header-block_container {
+
+}
+
+.header-block_body {
+  position: relative;
+  max-width: 1110px;
+}
+
+.header-block_title {
+  height: 184px;
   color: var(--color-main);
+  position: relative;
+  top: 50px;
 }
 
-.content {
-  width: 1110px;
+.header-block_image {
+  height: 525px;
+  width: 1082px;
+  position: relative;
+  left: 280px;
+  bottom: 250px;
+}
+
+.header-block_text {
+  position: absolute;
+  bottom: 70px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.header-block_text p {
+  width: 550px;
+}
+
+.header-block_text p:last-child {
+padding-left: 30px;
+}
+
+.header-block_button {
+  position: relative;
+  left: 580px;
+  background: var(--color-main);
+  width: 148px;
+  height: 49px;
+  font-weight: bold;
   text-align: center;
-  padding-top: 100px;
-  padding-bottom: 100px;
 }
 
-.background-image::before {
-  content: "";
+.header-block_button_text{
+  color: var(--color-white);
+  text-decoration: none;
+}
+
+
+.header-block_background {
   background-size: cover;
   position: absolute;
-  z-index: -1;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  width: 1440px;
+  width: 100%;
   opacity: 10%;
-  background: var(--color-white_translucent) url("../images/background.png") no-repeat;
-}
-
-.header_1page {
-  position: absolute;
-  width: 1138px;
-  height: 177px;
-  left: 165px;
-  top: 65px;
-}
-
-.image-main {
-  height: 525px;
-  width: 1082px;
-  position: absolute;
-  left: 461px;
-  top: 60px;
-}
-
-.text-container {
-  display: flex;
-  align-items: flex-start;
-  width: 540px;
-  height: 141px;
-}
-
-.link_more {
-  padding: 12px 24px;
-  font-weight: bold;
-  background-color: var(--color-main);
-  width: 95px;
-  height: 30px;
-  position: absolute;
-  left: 735px;
-  top: 765px;
-}
-
-.link_more_style {
+  background: var(--color-white_translucent);
   color: var(--color-light);
   text-decoration: none;
 }
 
-.p1__1page {
-  position: absolute;
-  width: 540px;
-  height: 141px;
-  left: 165px;
-  top: 540px;
+/*----------ОСНОВНАЯ ЧАСТЬ-------------------*/
+.main{
+  flex: 1 1 auto;
 }
-
-.p2__1page {
-  position: absolute;
-  width: 540px;
-  height: 186px;
-  left: 735px;
-  top: 540px;
-}
+/*----------ПОДВАЛ-------------------*/
